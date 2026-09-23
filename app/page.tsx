@@ -10,6 +10,7 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { CustomerService } from "@/components/layout/customer-service";
 
 export const metadata = {
   title: "Shadcn - 落地页模板",
@@ -54,6 +55,7 @@ export default function Home() {
       <ContactSection />
       <FAQSection />
       <FooterSection />
+      <CustomerService />
     </>
   );
 }
