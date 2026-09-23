@@ -36,36 +36,34 @@ interface FeatureProps {
 const routeList: RouteProps[] = [
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "客户评价",
   },
   {
     href: "#team",
-    label: "Team",
+    label: "团队",
   },
   {
     href: "#contact",
-    label: "Contact",
+    label: "联系我们",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "常见问题",
   },
 ];
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "展示产品价值",
+    description: "突出你的产品如何解决用户问题。",
   },
   {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
+    title: "建立信任",
+    description: "利用社会认同元素建立信任与信誉。",
   },
   {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
+    title: "获取潜在客户",
+    description: "让潜客收集表单更具吸引力，并进行策略化设计。",
   },
 ];
 
@@ -130,7 +128,7 @@ export const Navbar = () => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-card text-base">
-              Features
+              功能特色
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
@@ -175,9 +173,9 @@ export const Navbar = () => {
       <div className="hidden lg:flex">
         <ToggleTheme />
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
+        <Button asChild size="sm" variant="ghost" aria-label="在 GitHub 上查看">
           <Link
-            aria-label="View on GitHub"
+            aria-label="在 GitHub 上查看"
             href="https://github.com/nobruf/shadcn-landing-page.git"
             target="_blank"
           >

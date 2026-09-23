@@ -16,7 +16,7 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
+            <h3 className="font-bold text-lg">联系</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Github
@@ -37,7 +37,7 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
+            <h3 className="font-bold text-lg">平台</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 iOS
@@ -58,10 +58,10 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
+            <h3 className="font-bold text-lg">帮助</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
+                联系我们
               </Link>
             </div>
 
@@ -73,13 +73,13 @@ export const FooterSection = () => {
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
+                意见反馈
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
+            <h3 className="font-bold text-lg">社交平台</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Twitch
@@ -103,7 +103,7 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 Designed and developed by
+            &copy; 2024 设计与开发：
             <Link
               target="_blank"
               href="https://github.com/leoMirandaa"

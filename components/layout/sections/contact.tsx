@@ -43,7 +43,7 @@ export const ContactSection = () => {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Web Development",
+      subject: "网站开发",
       message: "",
     },
   });
@@ -52,7 +52,7 @@ export const ContactSection = () => {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=您好，我是${firstName} ${lastName}，我的邮箱是${email}。%0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -63,21 +63,20 @@ export const ContactSection = () => {
         <div>
           <div className="mb-4">
             <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
+              联系我们
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">与我们取得联系</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            有任何问题或合作想法，欢迎联系我们，我们会尽快回复你。
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />
-                <div className="font-bold">Find us</div>
+                <div className="font-bold">联系地址</div>
               </div>
 
               <div>742 Evergreen Terrace, Springfield, IL 62704</div>
@@ -86,7 +85,7 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className="font-bold">电话咨询</div>
               </div>
 
               <div>+1 (619) 123-4567</div>
@@ -95,7 +94,7 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">邮件联系</div>
               </div>
 
               <div>leomirandadev@gmail.com</div>
@@ -104,12 +103,12 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2">
                 <Clock />
-                <div className="font-bold">Visit us</div>
+                <div className="font-bold">开放时间</div>
               </div>
 
               <div>
-                <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>周一至周五</div>
+                <div>上午 8:00 - 下午 4:00</div>
               </div>
             </div>
           </div>
@@ -129,7 +128,7 @@ export const ContactSection = () => {
                     name="firstName"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>First Name</FormLabel>
+                        <FormLabel>名</FormLabel>
                         <FormControl>
                           <Input placeholder="Leopoldo" {...field} />
                         </FormControl>
@@ -142,7 +141,7 @@ export const ContactSection = () => {
                     name="lastName"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Last Name</FormLabel>
+                        <FormLabel>姓</FormLabel>
                         <FormControl>
                           <Input placeholder="Miranda" {...field} />
                         </FormControl>
@@ -158,7 +157,7 @@ export const ContactSection = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>邮箱</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
@@ -178,29 +177,29 @@ export const ContactSection = () => {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>主题</FormLabel>
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
+                              <SelectValue placeholder="请选择主题" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
+                            <SelectItem value="网站开发">
+                              网站开发
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
+                            <SelectItem value="移动端开发">
+                              移动端开发
                             </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
+                            <SelectItem value="Figma 设计">
+                              Figma 设计
                             </SelectItem>
                             <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
+                            <SelectItem value="全栈项目">
+                              全栈项目
                             </SelectItem>
                           </SelectContent>
                         </Select>
@@ -216,11 +215,11 @@ export const ContactSection = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>留言</FormLabel>
                         <FormControl>
                           <Textarea
                             rows={5}
-                            placeholder="Your message..."
+                            placeholder="请输入你的留言..."
                             className="resize-none"
                             {...field}
                           />
@@ -232,7 +231,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className="mt-4">发送留言</Button>
               </form>
             </Form>
           </CardContent>

@@ -30,48 +30,48 @@ const reviewList: ReviewProps[] = [
     name: "John Doe",
     userName: "Product Manager",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Next.js 加上 Shadcn 太棒了！这个模板可以修改颜色、字体和图片，轻松匹配我的品牌形象。",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    userName: "网络安全分析师",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "模板结构清晰、上手简单，而且每个组件都很容易按需定制。",
     rating: 4.8,
   },
 
   {
     image: "https://github.com/shadcn.png",
     name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    userName: "首席技术官",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "它帮助我们的团队快速搭建出专业的产品页面，开发效率提升非常明显。",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Ethan Parker",
-    userName: "Data Scientist",
+    userName: "数据科学家",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "响应式体验很出色，在不同设备上都能呈现一致的视觉效果。",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    userName: "IT 项目经理",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "从布局到细节都考虑得很周到，特别适合快速验证产品想法。",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    userName: "DevOps 工程师",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "代码组织得很好，部署流程顺畅，维护起来也非常轻松。",
     rating: 4.9,
   },
 ];
@@ -81,11 +81,11 @@ export const TestimonialSection = () => {
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
+          客户评价
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          听听 1000+ 位客户的真实反馈
         </h2>
       </div>
 
@@ -118,7 +118,7 @@ export const TestimonialSection = () => {
                     <Avatar>
                       <AvatarImage
                         src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
+                        alt="客户头像"
                       />
                       <AvatarFallback>SV</AvatarFallback>
                     </Avatar>

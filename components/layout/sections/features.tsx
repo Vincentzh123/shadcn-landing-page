@@ -11,39 +11,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "移动端友好",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "在手机、平板和桌面设备上都能保持出色体验。",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "社会认同",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "通过真实评价与案例建立用户信任。",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "精准内容",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "围绕目标用户组织内容，传达清晰有效的信息。",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
+    title: "视觉表现力",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "用有力的视觉设计吸引注意并强化品牌印象。",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
+    title: "明确的行动号召",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "让用户始终清楚下一步该做什么。",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "清晰的标题",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "用简洁有力的标题迅速传达核心价值。",
   },
 ];
 
@@ -51,17 +51,15 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        功能特色
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        我们有何不同
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        从内容到交互，每个细节都为更好的用户体验而设计。
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
