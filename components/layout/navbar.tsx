@@ -106,7 +106,7 @@ export const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     asChild
                     variant="ghost"
-                    className="justify-start text-base"
+                    className="justify-start text-base font-bold"
                   >
                     <Link href={href}>{label}</Link>
                   </Button>
@@ -161,7 +161,7 @@ export const Navbar = () => {
           <NavigationMenuItem>
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
+                <Link href={href} className="text-base px-2 font-bold">
                   {label}
                 </Link>
               </NavigationMenuLink>
